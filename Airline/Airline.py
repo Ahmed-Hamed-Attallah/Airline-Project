@@ -4,8 +4,8 @@ import pandas as pd
 st.set_page_config(page_icon='🛫' , page_title = 'Airline Dashboard')
 
 df = pd.read_csv('Airline/Airline_edite.csv')
-st.sidebar.page_link('https://airline-project1.streamlit.app/', *, label="Dashboard", icon='🛫', disabled=True, use_container_width=True)
-st.sidebar.page_link('https://airline-project2.streamlit.app/', *, label="Model", icon='🛫', disabled=True, use_container_width=True)
+st.sidebar.page_link('https://airline-project1.streamlit.app/', label="Dashboard", icon='🛫', disabled=True, use_container_width=True)
+st.sidebar.page_link('https://airline-project2.streamlit.app/', label="Model", icon='🛫', disabled=True, use_container_width=True)
 
 tab , tab2 , tab3= st.tabs(['Data descriptive','catigorical charts','nomerical charts'])
 ###########################################################_TAB_######################################################################################
