@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 st.set_page_config(page_icon='🛫' , page_title = 'Airline Dashboard')
 
-df = pd.read_csv('Airline_edite.csv')
+df = pd.read_csv('Airline/Airline_edite.csv')
 
 
 tab , tab2 , tab3= st.tabs(['Data descriptive','catigorical charts','nomerical charts'])
