@@ -5,8 +5,8 @@ import joblib
 
 st.set_page_config(page_title='Airline Model' , page_icon='🛫')
 
-model = joblib.load('KNN_model.pkl')
-df = pd.read_csv('Airline.csv')
+model = joblib.load('Airline/XG_model.pkl')
+df = pd.read_csv('Airline/Airline-2.csv')
 
 def Prediction(Airline,month,Source,Destination,Route,Duration,Total_Stops,Additional_Info):
        x = pd.DataFrame(columns=['Airline', 'month(2019)', 'Source', 'Destination', 'Route', 'Duration',
@@ -24,7 +24,7 @@ def Prediction(Airline,month,Source,Destination,Route,Duration,Total_Stops,Addit
 
 co1 , co2 , co3 = st.columns([1,0.10,1])
 with co1 :
-     st.image("indian-pacific-logo.png" , use_column_width=True)
+     st.image("Airline/indian-pacific-logo.png" , use_column_width=True)
 with co3 :
      st.header('Price prediction:')
      st.write('This model predict the price of tickets.Experimental copy(tarin on a small data)')
