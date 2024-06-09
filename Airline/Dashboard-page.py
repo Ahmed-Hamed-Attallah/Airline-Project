@@ -2,7 +2,8 @@ import streamlit as st
 import plotly.express as px 
 import pandas as pd
 st.set_page_config(page_icon='🛫' , page_title = 'Airline Dashboard')
-
+with st.sidebar():
+    st.write('wellcom')
 df = pd.read_csv('Airline/Airline_edite.csv')
 
 
