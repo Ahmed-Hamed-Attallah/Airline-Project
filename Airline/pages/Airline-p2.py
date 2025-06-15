@@ -5,8 +5,8 @@ import joblib
 
 st.set_page_config(page_title='Airline Model' , page_icon='🛫')
 
-model = joblib.load('Airline/XG_model.pkl')
-df = pd.read_csv('Airline/Airline-2.csv')
+model = joblib.load('XG_model.pkl')
+df = pd.read_csv('Airline-2.csv')
 
 def Prediction(Airline,month,Source,Destination,Route,Duration,Total_Stops,Additional_Info):
        x = pd.DataFrame(columns=['Airline', 'month(2019)', 'Source', 'Destination', 'Route', 'Duration',
