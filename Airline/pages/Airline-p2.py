@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd 
 import numpy as np
 import joblib
+import sklearn
+import imblearn
+import category_encoders
 
 st.set_page_config(page_title='Airline Model' , page_icon='🛫')
 
-model = joblib.load('KNN_model2.pkl')
+model = joblib.load('XG_model.pkl')
 df = pd.read_csv('Airline-2.csv')
 
 def Prediction(Airline,month,Source,Destination,Route,Duration,Total_Stops,Additional_Info):
